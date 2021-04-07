@@ -7,11 +7,9 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
 ## How to run
 
 1. Create folders 'datasets' and 'results' to save download datasets and output results.
-2. The datasets used included MNIST, notMNIST, FashionMNIST,CIFAR10, CIFAR100, SVHN, LSUN.
+2. Most of the datasets will be download automatically when you run the code at the first time. 
    You can download [notMNIST_small](http://yaroslavvb.com/upload/notMNIST/)
-   You can evaluate on either LSUN_classroom or LSUN_resize. The results are close.
-   You can download [LSUN_resize](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz?file_subpath=%2FLSUN_resize)
-   Other datasets will be download automatically when you run the code at the first time. 
+   You can evaluate on either LSUN_classroom or [LSUN_resize](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz?file_subpath=%2FLSUN_resize). The results are close.
   
 3. Run test_demo.py
 4. We usually first pretrain the classfier to reach a good accuracy and then feed it into our joint alogrithm to calibrate its unceratiny.
