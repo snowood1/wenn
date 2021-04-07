@@ -6,8 +6,8 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
 
 ## Quick Start
 
-1. Create folders 'datasets' and 'results' to save download datasets and output results.
-2. Most of the datasets will be download automatically when you run the code at the first time. 
+1. Create folders 'datasets' and 'results' to save downloaded datasets and output results.
+2. Most of the datasets will be downloaded automatically. 
    You can download [notMNIST_small](http://yaroslavvb.com/upload/notMNIST/)
    You can evaluate on either LSUN_classroom or [LSUN_resize](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz?file_subpath=%2FLSUN_resize). The results are close.
 3. Run test_demo.py
