@@ -4,6 +4,7 @@ This repository contains the essential code for the paper [Multidimensional Unce
 
 The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also been tested under Python 3.6 and pytorch 1.7.
 
+
 ## Quick Start
 
 1. Create folders 'datasets' and 'results' to save downloaded datasets and output results.
@@ -12,11 +13,12 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
    You can evaluate on either LSUN_classroom or [LSUN_resize](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz?file_subpath=%2FLSUN_resize). The results are close.
 3. Run test_demo.py
 
+
 ## More details
 4. We first pretrain the ENN classfier to reach a good accuracy and then feed it into the alogrithm to calibrate its uncertainty.
    All the pretrained classifiers is under the folder '[pretrain](https://github.com/snowood1/wenn/tree/main/pretrain)'. 
    Note that the pretrained ENN models are **different** from the normal softmax pretrained model.
-   It is trained using Eq.9.  Please also refer to the pretrain function in main.py.
+   It is trained using Eq.9, not cross-entropy.  Please also refer to the pretrain function in main.py.
    
   
 5. The repo below contain a lot of baselines considered in our paper. But we change all the base classfier as ResNet-20 in our experiments.
@@ -28,8 +30,6 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
    * [BayesByHpernet](https://github.com/pawni/BayesByHypernet)
  
 6. We also provide an [example](https://github.com/snowood1/wenn/blob/main/demo_saved_results.ipynb) of plotting Figure 4, Figure 5 and Figure 6.
-
-
 
 
 
