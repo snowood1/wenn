@@ -12,7 +12,7 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
    You can evaluate on either LSUN_classroom or [LSUN_resize](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz?file_subpath=%2FLSUN_resize). The results are close.
 3. Run test_demo.py
 
-## More
+## More details
 5. We first pretrain the ENN classfier to reach a good accuracy and then feed it into the alogrithm to calibrate its unceratiny.
    All the pretrained classifiers is under the folder 'pretrain'. 
    Note that the pretrained ENN models are **different** from the normal softmax pretrained model.
@@ -21,11 +21,11 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
   
 5. Our model use the rest code as baselines. But we change all the base classfier as ResNet-20 in our experiments.
 
- * [Outlier Explosure](https://github.com/hendrycks/outlier-exposure).  Our baselines, MSP and OE come from this repo.
+ ** [Outlier Explosure](https://github.com/hendrycks/outlier-exposure).  Our baselines, MSP and OE come from this repo.
  
- * [CCU](https://github.com/AlexMeinke/certified-certain-uncertainty) also contain many baselines considered in our paper. 
+ ** [CCU](https://github.com/AlexMeinke/certified-certain-uncertainty) also contain many baselines considered in our paper. 
  
- * [BayesByHpernet](https://github.com/pawni/BayesByHypernet) contains many bayes-methods considered in our paper.
+ ** [BayesByHpernet](https://github.com/pawni/BayesByHypernet) contains many bayes-methods considered in our paper.
 
 
 
