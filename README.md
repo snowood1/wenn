@@ -21,11 +21,11 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
   
 5. Our model use the rest code as baselines. But we change all the base classfier as ResNet-20 in our experiments.
 
- ** [Outlier Explosure](https://github.com/hendrycks/outlier-exposure).  Our baselines, MSP and OE come from this repo.
+   * [Outlier Explosure](https://github.com/hendrycks/outlier-exposure).  Our baselines, MSP and OE come from this repo.
  
- ** [CCU](https://github.com/AlexMeinke/certified-certain-uncertainty) also contain many baselines considered in our paper. 
+   * [CCU](https://github.com/AlexMeinke/certified-certain-uncertainty) also contain many baselines considered in our paper. 
  
- ** [BayesByHpernet](https://github.com/pawni/BayesByHypernet) contains many bayes-methods considered in our paper.
+   * [BayesByHpernet](https://github.com/pawni/BayesByHypernet) contains many bayes-methods considered in our paper.
 
 
 
