@@ -2,7 +2,6 @@ import os
 # os.environ['CUDA_VISIBLE_DEVICES']='0'
 
 from torch import autograd, optim
-# from models import ENN, resnet20, update_bn_stats, freeze_bn_stats,
 from models import *
 from helper import *
 
@@ -68,8 +67,6 @@ test_out: test out-of-distribution data
 
 def test_out(model, ood_loader, num_classes, in_score, df_ood, df_ood_avg, epoch):
     with torch.no_grad():
-        # for ood_name in ood_loader_list:
-        #     ood_loader = ood_loader_list[ood_name]
 
         df_tmp = pd.DataFrame(
             columns=['ood_ent', 'ood_vac', 'ood_dis'])
@@ -165,7 +162,7 @@ def main(
     gamma = 0.01,
     network = 'resnet20',
     dataname = 'CIFAR10',
-    ood_dataname= None,  # This parameter is deprecated. We ve defined each dataset's ood datasets below.
+    ood_dataname= None,  # This parameter is deprecated. We've defined each dataset's ood datasets below.
     grad_clip = 1,
     d_iters = 2,
     e_iters = 1,
