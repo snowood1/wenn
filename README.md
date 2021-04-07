@@ -1,8 +1,8 @@
-# wenn
+# WGAN-ENN
 
 This repository contains the essential code for the paper [Multidimensional Uncertainty-Aware Evidential Neural Networks (AAAI 2021)](https://arxiv.org/abs/2012.13676).
 
-The code is written by Python3.8 and pytorch 1.5 in GPU version. 
+The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also been tested under Python 3.6 and pytorch 1.7.
 
 ## How to run
 
