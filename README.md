@@ -15,7 +15,9 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
 ## More
 5. We first pretrain the ENN classfier to reach a good accuracy and then feed it into the alogrithm to calibrate its unceratiny.
    All the pretrained classifiers is under the folder 'pretrain'. 
-   Note that this pretrained ENN models are **different** from the normal softmax pretrained model.
+   Note that the pretrained ENN models are **different** from the normal softmax pretrained model.
+   It is trained using Eq.9.  Please also refer to pretrain function inside main.py.
+   
   
 5. Our model use the rest code as baselines. But we change all the base classfier as ResNet-20 in our experiments.
 
