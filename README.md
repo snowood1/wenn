@@ -4,8 +4,20 @@ This repository contains the essential code for the paper [Multidimensional Unce
 
 The code is written by Python3.8 and pytorch 1.5 in GPU version. 
 
+## How to run
 
-Will be available shortly.
+1. Create folder 'datasets' and 'results' to save download datasets and output results.
+2. The datasets used included MNIST, notMNIST, FashionMNIST,CIFAR10, CIFAR100, SVHN, LSUN.
+   You can download [notMNIST_small] (http://yaroslavvb.com/upload/notMNIST/)
+   You can evaluate either LSUN_classroom or LSUN_resize. The results are close.
+   You can download [LSUN_resize] (https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz?file_subpath=%2FLSUN_resize)
+ 
+ 
+
+
+
+
+
 
 ## Citation
 
