@@ -12,9 +12,9 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
    You can evaluate on either LSUN_classroom or [LSUN_resize](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz?file_subpath=%2FLSUN_resize). The results are close.
   
 3. Run test_demo.py
-4. We usually first pretrain the classfier to reach a good accuracy and then feed it into our joint alogrithm to calibrate its unceratiny.
-   I have provided all the pretrained classifiers insider the folder 'pretrain'. Note that this pretrained models are different from the normal
-   pretrained model. Because the output of the pretrained ENN is alpha, not softmax probability.
+4. We first pretrain the ENN classfier to reach a good accuracy and then feed it into the alogrithm to calibrate its unceratiny.
+   All the pretrained classifiers is under the folder 'pretrain'. 
+   Note that this pretrained ENN models are different from the normal softmax pretrained model.
   
 5. Our model use the rest code as baselines.
  [Outlier Explosure](https://github.com/hendrycks/outlier-exposure).  Our baselines, MSP and OE come from this repo.
