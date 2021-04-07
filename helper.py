@@ -207,28 +207,3 @@ def get_pr_roc(normal_score, anormal_score):
 #     perturbed_image = torch.clamp(perturbed_image, 0, 1)
 #     # Return the perturbed image
 #     return perturbed_image
-
-# def tr2np(x):
-#     if type(x) == torch.Tensor:
-#         x = x.detach().cpu().numpy()
-#     return x
-
-
-
-# def get_noise(batch_size, split):
-#     dataset = scipy.io.loadmat(Root + "notMNIST_small.mat")
-#     # notmnist_y = np.zeros((notmnist_x.shape[0], 10))
-#
-#     data = np.array(dataset["images"]).transpose() / 255
-#
-#     num = len(data)
-#     indices = list(range(num))
-#     np.random.shuffle(indices)
-#
-#     data = data[indices[:split]]
-#
-#     data = F.pad(torch.tensor(data), (2, 2, 2, 2))
-#     data = data.unsqueeze(1).float()
-#     # kwargs = {'num_workers': 1, 'pin_memory': True} if CUDA else {}
-#     notmnist_loader = torch.utils.data.DataLoader(data, batch_size=batch_size, **kwargs)
-#     return notmnist_loader
