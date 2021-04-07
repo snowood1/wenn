@@ -18,7 +18,7 @@ import torch.nn as nn
 
 
 '''
-test_in: test  in-distribution data
+test_in: test in-distribution data
 '''
 def test_in(model, test_loader, num_classes, df_test, df_test_avg, epoch):
     with torch.no_grad():
@@ -63,7 +63,7 @@ def test_in(model, test_loader, num_classes, df_test, df_test_avg, epoch):
 
 
 '''
-test_in: test  out-of-distribution data
+test_out: test out-of-distribution data
 '''
 
 def test_out(model, ood_loader, num_classes, in_score, df_ood, df_ood_avg, epoch):
@@ -217,17 +217,8 @@ def main(
         print('\n', file=file)
 
 
-    ###########   DATASET   ############################################
-
-
-
     # #################  show results ####################################
-    # _, ood_loader1,_ = get_data(dataname='CIFAR100', batch_size=batch_size, split=10000, augment=False)
-    # ood_loader2 = get_lsun(batch_size, split=10000, kwargs=kwargs,transform=transform)
-    # _, ood_loader3, _ = get_data('SVHN', batch_size=batch_size, split=10000, augment=False)
-    # for ood_name in ood_dataname:
-
-    # ## TODO
+    
     if type(ood_dataname) == str:
         ood_dataname = [ood_dataname]
 
