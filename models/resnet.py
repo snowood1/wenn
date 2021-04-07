@@ -23,13 +23,11 @@ author, Yerlan Idelbayev.
 '''
 
 '''
-We modify the ResNet code from Yerlan Idelbayev's version by replacing Batch Normalization to a custom version 
-that can control to activate or freeze the automatic updates of the weights. 
-Because in the early epochs, the fake samples generated from WGAN are too different from the training samples. 
-If these samples are fed into the model it will destroy the weights of the BN easily.
-So we let the BNs to update automatically during the training data but freeze them when fedding fake samples.
+We modify the ResNet code from Yerlan Idelbayev's version by replacing Batch Normalization with a custom version. 
+So that we can activate or freeze the automatic updates of the weights. 
+The fake samples generated from WGAN are too different from the training samples in the early epochs.  
+Therefore we freeze the BN's weights when we feed the model with fake samples. 
 '''
-
 
 
 import torch
