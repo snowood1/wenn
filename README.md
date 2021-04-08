@@ -16,7 +16,7 @@ The code is written by Python 3.8 and pytorch 1.5 in GPU version. It has also be
 
 ## More details
 4. We first pretrain the ENN classfier to reach a good accuracy and then feed it into the alogrithm to calibrate its uncertainty.
-   All the pretrained classifiers is under the folder '[pretrain](https://github.com/snowood1/wenn/tree/main/pretrain)'. 
+   All the pretrained classifiers are under the folder '[pretrain](https://github.com/snowood1/wenn/tree/main/pretrain)'. 
    Note that the pretrained ENN models are **different** from the normal softmax pretrained model.
    It is trained using Eq.9, not cross-entropy.  Please also refer to the pretrain function in main.py.
    
