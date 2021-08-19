@@ -39,7 +39,12 @@ If you find this repo useful in your research, please consider citing:
 
     @article{hu2020multidimensional,
       title={Multidimensional Uncertainty-Aware Evidential Neural Networks},
-      author={Hu, Yibo and Ou, Yuzhe and Zhao, Xujiang and Cho, Jin-Hee and Chen, Feng},
-      journal={arXiv preprint arXiv:2012.13676},
-      year={2020}
+      volume={35},
+      url={https://ojs.aaai.org/index.php/AAAI/article/view/16954}, 
+      number={9}, 
+      journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+      author={Hu, Yibo and Ou, Yuzhe and Zhao, Xujiang and Cho, Jin-Hee and Chen, Feng}, 
+      year={2021}, 
+      month={May},
+      pages={7815-7822}
     }
